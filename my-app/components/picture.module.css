@@ -1,0 +1,103 @@
+#ManHead,
+#ladyHead {
+  animation: moveHead 2s cubic-bezier(.17,.67,.7,.89) infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#manLeft,
+#ladyLeft {
+  animation: moveLeftHand 2s linear infinite;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  transform-origin: 10px;
+  transform-box: fill-box;
+}
+
+#manRight {
+  animation: moveManRight 2s linear infinite;
+  transform-origin: center;
+}
+
+#ladyHand {
+  animation: moveRightHand 2s linear infinite;
+  transform-origin: top;
+  transform-box: fill-box;
+}
+
+#etherum {
+  animation: ethereum 2s linear infinite;
+}
+
+@keyframes moveHead {
+  /* from {
+      transform: rotateZ(0deg);
+  }
+  to {
+      transform: rotateZ(-4deg);
+  } */
+  0% {
+      transform: rotateZ(0deg);
+  }50% {
+      transform: rotateZ(19deg);
+  }100% {
+      transform: rotateZ(0deg);
+  }
+}
+
+@keyframes moveLeftHand {
+  /* from {
+      transform: rotate(0deg);
+      transition: 2s ease-in;
+  }
+  to {
+      transform: rotate(3deg);
+      transition: 2s ease;
+  } */
+
+  0%{
+      transform: rotate(0deg);
+  }
+  50%{
+      transform: rotate(6deg);
+  }
+  100%{
+      transform: rotate(0deg);
+  }
+}
+
+@keyframes moveRightHand {
+  0%{
+      transform: rotate(-1deg);
+  }
+  50%{
+      transform: rotate(20deg);
+  }
+  100% {
+      transform: rotate(-1deg);
+  }
+}
+
+@keyframes ethereum {
+  0%{
+      transform: scale(1);
+  }
+  50%{
+      transform: scale(1.06);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+@keyframes moveManRight {
+  0%{
+    transform: rotate(1deg);
+}
+50%{
+    transform: rotate(-10deg);
+}
+100% {
+    transform: rotate(1deg);
+}
+}
