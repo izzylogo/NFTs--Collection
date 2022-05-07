@@ -404,6 +404,9 @@ export default function Home() {
       <div className={theme ? styles.main : styles.dark}>
         <div>
           <h1 className={styles.title}>Welcome to Crypto Devs!</h1>
+          <div>
+            CryptoDevs is a collection of developers in the Web3 space
+          </div>
           <div className={styles.description}>
             Its an NFT collection for developers in Crypto.
           </div>
