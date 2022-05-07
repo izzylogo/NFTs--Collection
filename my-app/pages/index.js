@@ -2,7 +2,7 @@ import { Contract, providers, utils } from "ethers";
 import Head from "next/head";
 import React, { useEffect, useRef, useState } from "react";
 import Web3Modal from "web3modal";
-import Picture from "../components/Picture";
+// import Picture from "../components/Picture";
 import { abi, NFT_CONTRACT_ADDRESS } from "../constants";
 import styles from "../styles/Home.module.css";
 
@@ -416,8 +416,8 @@ export default function Home() {
           {renderButton()}
         </div>
         <div>
-          {/* <img className={styles.image} src="./cryptodevs/0.svg" /> */}
-          <Picture />
+          <img className={styles.image} src="./cryptodevs/0.svg" />
+          {/* <Picture /> */}
         </div>
       </div>
 
