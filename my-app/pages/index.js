@@ -488,7 +488,7 @@ export default function Home() {
       </div>
 
       <footer className={theme ? styles.footer : styles.footerDark}>
-        Made with &#10084; by Crypto Devs
+        Made with &#10084; Crypto Devs
       </footer>
     </div>
   );
